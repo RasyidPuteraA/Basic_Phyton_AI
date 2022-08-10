@@ -2,8 +2,8 @@ print('Selamat Datang!')
 while True:
     print('---Menu---\n1.Daftar Kontak\n2.Tambah Kontak\n3.Keluar\n\n')
     x=int(input('Pilih Menu :'))
-    daftar_contact = open('data.txt','a')
-    read_data = open('data.txt','r')
+    daftar_contact = open('Pertemuan 4/data.txt','a')
+    read_data = open('Pertemuan 4/data.txt','r')
     data = read_data.read()
     if x == 1:
         print('\nDaftar Kontak :')
