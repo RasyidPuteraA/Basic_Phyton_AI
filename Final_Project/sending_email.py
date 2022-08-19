@@ -1,3 +1,4 @@
+#reffensi (https://www.youtube.com/watch?v=q0yAR04avXk&t=1109s)
 
 from multiprocessing import context
 import smtplib,ssl
@@ -8,7 +9,8 @@ from email.mime.multipart import MIMEMultipart
 from config import username_email,pass_email
 from smtplib import SMTPException
 
-read_data = open('Final_Project/data_email.txt','r')
+
+read_data = open('Final_Project/receiver_list.txt','r')
 x = read_data.readlines()
 
 
@@ -19,7 +21,7 @@ for receiver in x:
     msg['From']='Muhammad Rasyid Putera Agung'
     msg['To']= receiver
 
-    #template
+    #template html
     html = open("Final_Project/template.html")
     template = MIMEText(html.read(),'html')
     msg.attach(template)
