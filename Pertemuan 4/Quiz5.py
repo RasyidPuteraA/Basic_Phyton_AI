@@ -1,6 +1,6 @@
 def myfunction():
     x = 10
-    print('Value inside function',x)
+    print('Value inside function :',x)
     
 x = 20
 

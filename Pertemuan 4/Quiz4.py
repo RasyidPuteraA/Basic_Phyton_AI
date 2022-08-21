@@ -1,7 +1,7 @@
 mydict = {
     'Name' : 'Zara',
     'Age' : 7,
-    'Class' : 'Frist'
+    'Class' : 'First'
 }
 mydict['Age'] = 8
 mydict['School'] = 'DPS School'
