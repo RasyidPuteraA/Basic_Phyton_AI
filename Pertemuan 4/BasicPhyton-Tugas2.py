@@ -10,15 +10,13 @@ while True:
         print(data)
         continue
     elif x == 2:
-        while True: 
-            print('Masukkan kontak baru :')
-            Nama = input('Nama : ')
-            number = input('No Telepon : ')
-            lbl = (f'Nama : {Nama} \nNo Telpon : {number}\n\n')
-            daftar_contact.write(lbl)
-            print('Kontak Baru Telah Terdaftar\n')
-            read_data.read()
-            break
+        print('Masukkan kontak baru :')
+        Nama = input('Nama : ')
+        number = input('No Telepon : ')
+        lbl = (f'Nama : {Nama} \nNo Telpon : {number}\n\n')
+        daftar_contact.write(lbl)
+        print('Kontak Baru Telah Terdaftar\n')
+        read_data.read()
         continue
     elif x == 3:
         print('Program selesai, sampai jumpa lagi')
